@@ -30,7 +30,7 @@ pub struct Package {
     pub repo: String,
     pub current_version: String,
     pub new_version: String,
-    pub architecture: String,
+    //pub architecture: String,
     pub risk_level: RiskLevel,
     pub selected:bool,
 }

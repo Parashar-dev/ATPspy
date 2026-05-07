@@ -5,7 +5,7 @@ use ratatui::{
     text::{Line, Span},
     widgets::{Block, Borders, Paragraph},
 };
-use serde_json::error;
+
 
 fn centered_rect(width: u16, height: u16, area: Rect) -> Rect {
     let x = area.x + area.width.saturating_sub(width) / 2;

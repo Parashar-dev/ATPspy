@@ -11,7 +11,7 @@ use crossterm::{
     event::{self, Event, KeyCode, KeyEventKind},
     execute,
     terminal::{
-        self, EnterAlternateScreen, LeaveAlternateScreen, disable_raw_mode, enable_raw_mode,
+         EnterAlternateScreen, LeaveAlternateScreen, disable_raw_mode, enable_raw_mode,
     },
 };
 
