@@ -361,7 +361,7 @@ fn parse_packages() -> Vec<Package> {
             let name = name_repo.next().unwrap_or("").to_string();
             let repo = name_repo.next().unwrap_or("unknown").to_string();
             let new_version = parts[1].to_string();
-            let architecture = parts[2].to_string();
+            //let architecture = parts[2].to_string();
             let current_version = if parts.len() >= 6 {
                 parts[5].trim_end_matches(']').to_string()
             } else {
