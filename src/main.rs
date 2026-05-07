@@ -373,7 +373,7 @@ fn parse_packages() -> Vec<Package> {
                 repo,
                 current_version,
                 new_version,
-                architecture,
+                //architecture,
                 risk_level: RiskLevel::Low,
                 selected: false,
             });
