@@ -65,8 +65,8 @@ We all run `sudo apt update && sudo apt upgrade -y` blindly. But do you know:
 
 ```
 ┌─────────────┐     ┌─────────────┐     ┌─────────────┐     ┌─────────────┐
-│  🔒 Password │ ──▶ │  🔄 Scanning │ ──▶ │  📦 Package  │ ──▶ │  📈 Upgrade  │
-│    Screen    │     │   apt update │     │    List      │     │   Progress  │
+│ 🔒Password  │ ──▶ │ 🔄 Scanning │ ──▶ │ 📦 Package  │ ──▶ │ 📈 Upgrade  │
+│   Screen    │     │  apt update │     │    List     │     │   Progress  │
 └─────────────┘     └─────────────┘     └─────────────┘     └─────────────┘
        ▲                   │                                        │
        └───── ❌ Wrong ────┘                                        │
