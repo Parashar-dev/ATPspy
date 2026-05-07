@@ -9,11 +9,28 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Rust-1.75%2B-orange?logo=rust" alt="Rust"/>
+  <a href="https://crates.io/crates/atpspy"><img src="https://img.shields.io/crates/v/atpspy?color=orange&logo=rust&label=crates.io" alt="Crates.io"/></a>
+  <a href="https://crates.io/crates/atpspy"><img src="https://img.shields.io/crates/d/atpspy?color=blue&label=downloads" alt="Downloads"/></a>
   <img src="https://img.shields.io/badge/TUI-ratatui-cyan" alt="Ratatui"/>
   <img src="https://img.shields.io/badge/Platform-Linux-green?logo=linux" alt="Linux"/>
   <img src="https://img.shields.io/github/license/Parashar-dev/ATPspy" alt="License"/>
 </p>
+
+---
+
+## 🚀 Install
+
+```bash
+cargo install atpspy
+```
+
+Then run from anywhere:
+
+```bash
+atpspy
+```
+
+> **Requires:** Linux with `apt` package manager (Debian/Ubuntu) and [Rust 1.75+](https://rustup.rs/)
 
 ---
 
@@ -31,18 +48,18 @@ We all run `sudo apt update && sudo apt upgrade -y` blindly. But do you know:
 
 | Feature | Status |
 |---------|--------|
-| 🔒 Secure password input inside TUI | ✅ Done |
-| 🔄 Real `sudo apt update` with live scanning | ✅ Done |
-| 📦 Parse `apt list --upgradable` | ✅ Done |
-| 🔴🟡🟢 Risk-level color coding (Critical/High/Medium/Low) | ✅ Done |
-| ✅ Select/deselect individual packages (Spacebar) | ✅ Done |
-| 🅰️ Bulk select all / deselect all | ✅ Done |
-| 🔄 Real `sudo apt install` for upgrades | ✅ Done |
-| 📈 Upgrade progress tracking | ✅ Done |
-| 📝 Live upgrade log viewer | ✅ Done |
-| ❌ Wrong password detection & retry | ✅ Done |
-| 🕐 Sudo timeout protection (30s) | ✅ Done |
-| 🧪 Development mode with mock data | ✅ Done |
+| 🔒 Secure password input inside TUI | ✅ |
+| 🔄 Real `sudo apt update` with live scanning | ✅ |
+| 📦 Parse `apt list --upgradable` | ✅ |
+| 🔴🟡🟢 Risk-level color coding (Critical/High/Medium/Low) | ✅ |
+| ✅ Select/deselect individual packages (Spacebar) | ✅ |
+| 🅰️ Bulk select all / deselect all | ✅ |
+| 🔄 Real `sudo apt install` for upgrades | ✅ |
+| 📈 Upgrade progress tracking | ✅ |
+| 📝 Live upgrade log viewer | ✅ |
+| ❌ Wrong password detection & retry | ✅ |
+| 🕐 Sudo timeout protection (30s) | ✅ |
+| 🧪 Development mode with mock data | ✅ |
 
 ## 🎬 Workflow
 
@@ -61,13 +78,16 @@ We all run `sudo apt update && sudo apt upgrade -y` blindly. But do you know:
 3. **Package List** — Browse upgradable packages with risk indicators, select what to upgrade
 4. **Upgrade Screen** — Real-time `sudo apt install` progress with live logs
 
-## 🚀 Quick Start
+## 📦 Installation
 
-### Prerequisites
-- **Linux** with `apt` package manager (Debian/Ubuntu)
-- **Rust** 1.75+ ([install](https://rustup.rs/))
+### From crates.io (Recommended)
 
-### Build & Run
+```bash
+cargo install atpspy
+atpspy
+```
+
+### From source
 
 ```bash
 git clone https://github.com/Parashar-dev/ATPspy.git
@@ -172,6 +192,12 @@ Contributions are welcome! Feel free to:
 3. Commit your changes (`git commit -m 'Add awesome feature'`)
 4. Push to the branch (`git push origin feature/awesome`)
 5. Open a Pull Request
+
+## 🗑️ Uninstall
+
+```bash
+cargo uninstall atpspy
+```
 
 ## 📄 License
 

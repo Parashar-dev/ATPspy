@@ -1,7 +1,17 @@
 [package]
-name = "ATPspy"
+name = "atpspy"
 version = "0.1.0"
 edition = "2024"
+description = "A TUI tool to analyze, risk-score, and selectively upgrade APT packages"
+license = "MIT"
+repository = "https://github.com/Parashar-dev/ATPspy"
+readme = "README.md"
+keywords = ["apt", "tui", "linux", "package-manager", "ratatui"]
+categories = ["command-line-utilities"]
+
+[[bin]]
+name = "atpspy"
+path = "src/main.rs"
 
 [dependencies]
 anyhow = "1.0.102"
