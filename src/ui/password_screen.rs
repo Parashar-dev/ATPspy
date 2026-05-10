@@ -53,11 +53,11 @@ pub fn draw(f: &mut Frame, password_len: usize ,error:&str) {
             Style::default().fg(Color::Magenta),
         )),
         Line::from(Span::styled(
-            r"██║  ██║   ██║   ██║     ███████║██║         ██║   ",
+            r"██║  ██║   ██║   ██║     ███████║██║        ██║   ",
             Style::default().fg(Color::DarkGray),
         )),
         Line::from(Span::styled(
-            r"╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚══════╝╚═╝         ╚═╝   ",
+            r"╚═╝  ╚═╝   ╚═╝   ╚═╝     ╚══════╝╚═╝        ╚═╝   ",
             Style::default().fg(Color::DarkGray),
         )),
         Line::from(""),
